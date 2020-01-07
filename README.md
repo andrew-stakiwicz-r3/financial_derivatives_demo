@@ -6,9 +6,7 @@
 
 Welcome to the Financial Derivatives Demo in Corda.  
 
-This is for demonstration purposes only, and it comes as-is, open source with no warantees or gaurantees of any kind.  
-Do not use this pricing information for the purposes of real-world valuations. 
-I cant stress enough that this is all pretty approximate, and not to be used as is in a real world financial application. 
+This is for demonstration purposes only, and it comes as-is, open source with no warantees or gaurantees of any kind.  Do not use this pricing information for the purposes of real-world valuations. I cant stress enough that this is all pretty approximate, and not to be used as is in a real world financial application.
 If you ignore those warning, and come to regret it, please don't sue me. 
 
 This project is built on top of the Cordapp Template in Kotlin, so the stucture is borrowed from there. 
@@ -18,14 +16,12 @@ Critical components here beyond Corda.
 1) QuantLib - Quantlib is a free open source library for quantitative finance written in C++ by people way smarter than me. 
 I'm greatful to the community around it, find more info here: https://www.quantlib.org/
 
-2) 
+2) SWIG (Simplified Wrapper and Interface Generator) - Because the quantlib library is written in C++ in order to access it from a Java context we require swig bindings. 
 
-SWIG 
-3) Quandl A
-
+3) Quandl - The hope eventually is to build against multiple market data sources, Boomberg, Reuters etc. for now building using the freely available API from Quandl and some treasury data. 
 
 
-
+The rest of this is doc included with the original COrDapp template... Will clean it up in time  
 
 # CorDapp Template - Kotlin
 
