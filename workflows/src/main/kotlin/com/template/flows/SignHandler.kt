@@ -10,7 +10,7 @@ import net.corda.core.transactions.FilteredTransaction
 import net.corda.core.utilities.ProgressTracker
 import net.corda.core.utilities.unwrap
 import com.template.flows.SignPrime
-import com.template.service.ValuationOracle
+import com.template.flows.ValuationOracle
 
 // The oracle flow to sign prime-number transactions.
 @InitiatedBy(SignPrime::class)

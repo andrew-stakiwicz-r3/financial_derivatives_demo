@@ -8,7 +8,7 @@ import net.corda.core.flows.InitiatedBy
 import net.corda.core.utilities.ProgressTracker
 import net.corda.core.utilities.unwrap
 import com.template.flows.QueryPrime
-import com.template.service.ValuationOracle
+import com.template.flows.ValuationOracle
 
 // The oracle flow to handle prime-number queries.
 @InitiatedBy(QueryPrime::class)
