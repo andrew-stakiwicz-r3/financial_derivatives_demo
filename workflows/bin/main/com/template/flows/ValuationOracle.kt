@@ -9,6 +9,8 @@ import net.corda.core.transactions.FilteredTransaction
 import com.template.contracts.PrimeContract
 import java.math.BigInteger
 import java.util.LinkedHashMap
+import com.template.flows.TreasuryData
+
 
 
 class MaxSizeHashMap<K, V>(private val maxSize: Int = 1024) : LinkedHashMap<K, V>() {
@@ -60,6 +62,12 @@ class ValuationOracle(val services: ServiceHub) : SingletonSerializeAsToken() {
 
         return 1.0; 
     }
+
+
+
+
+
+    
 
     // Signs over a transaction if the specified Nth prime for a particular N is correct.
     // This function takes a filtered transaction which is a partial Merkle tree. Any parts of the transaction which

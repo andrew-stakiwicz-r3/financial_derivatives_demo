@@ -106,10 +106,17 @@ public class DiscountCurve {
                 // Create RateHelpers for each tenor
                 RateHelperVector bondInstruments = new RateHelperVector(); 
                 for (String tenor : tenorToPeriod.keySet()) {
-                        bondInstruments.add(new DepositRateHelper(
-                                tenorToQuoteHandle.get(tenor), 
-                                tenorToPeriod.get(tenor), 
-                                fixingDays, usdCalendar, bizConvention, true, zcBondsDayCounter));
+                        bondInstruments.add(
+                                new DepositRateHelper(
+                                        tenorToQuoteHandle.get(tenor),
+                                        tenorToPeriod.get(tenor),
+                                        fixingDays,
+                                        usdCalendar,
+                                        bizConvention,
+                                        true,
+                                        zcBondsDayCounter)
+                        );
+
                 }     
 
                 // Build the yield curve term structure from the above 

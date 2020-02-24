@@ -39,6 +39,7 @@ configurations {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    compile files("/Users/andrewstakiwicz/quantlib_swig/QuantLib-SWIG-1.16.1/Java/QuantLib.jar")
     testCompile "org.jetbrains.kotlin:kotlin-test:$kotlin_version"
     testCompile "junit:junit:$junit_version"
 
